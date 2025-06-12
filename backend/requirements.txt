@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+celery
+redis
+requests
+pydantic
+psycopg2-binary
+SQLAlchemy 
+openai
+dotenv
+alembic
+google-generativeai
+google

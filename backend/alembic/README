@@ -1,0 +1,9 @@
+Alembic migration folder.
+
+Основные команды:
+
+# Создать новую миграцию (автоматически)
+alembic revision --autogenerate -m "init"
+
+# Применить миграции
+alembic upgrade head 
