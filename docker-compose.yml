@@ -24,7 +24,6 @@ services:
     depends_on:
       - redis
       - db
-      - migrate
   celery:
     build:
       context: ./backend
