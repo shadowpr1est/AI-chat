@@ -13,14 +13,6 @@ services:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-  migrate:
-    build:
-      context: ./backend
-    command: alembic upgrade head
-    volumes:
-      - ./backend:/app
-    depends_on:
-      - db
   backend:
     build:
       context: ./backend
