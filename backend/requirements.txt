@@ -9,5 +9,4 @@ SQLAlchemy
 openai
 dotenv
 alembic
-google-generativeai
-google
+google-genai
