@@ -13,6 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Set up Docker (если нужно)
+        run: |
+          docker --version
+          docker compose version || sudo apt install docker-compose-plugin -y
+
       - name: Build and run with Docker Compose
         run: |
           sudo docker compose down
